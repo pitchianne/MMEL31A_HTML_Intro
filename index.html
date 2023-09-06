@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intro</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+ <style type="text/css">
+    .form-style-4{
+        width: 450px;
+        font-size: 16px;
+        background: #495C70;
+        padding: 30px 30px 15px 30px;
+        border: 5px solid #53687E;
+    }
+    .form-style-4 input[type=submit],
+    .form-style-4 input[type=button],
+    .form-style-4 input[type=text],
+    .form-style-4 input[type=email],
+    .form-style-4 textarea,
+    .form-style-4 label
+    {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: #fff;
+    
+    }
+    .form-style-4 label {
+        display:block;
+        margin-bottom: 10px;
+    }
+    .form-style-4 label > span{
+        display: inline-block;
+        float: left;
+        width: 150px;
+    }
+    .form-style-4 input[type=text],
+    .form-style-4 input[type=email] 
+    {
+        background: transparent;
+        border: none;
+        border-bottom: 1px dashed #83A4C5;
+        width: 275px;
+        outline: none;
+        padding: 0px 0px 0px 0px;
+        font-style: italic;
+    }
+    .form-style-4 textarea{
+        font-style: italic;
+        padding: 0px 0px 0px 0px;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px dashed #83A4C5;
+        width: 275px;
+        overflow: hidden;
+        resize:none;
+        height:20px;
+    }
+    
+    .form-style-4 textarea:focus, 
+    .form-style-4 input[type=text]:focus,
+    .form-style-4 input[type=email]:focus,
+    .form-style-4 input[type=email] :focus
+    {
+        border-bottom: 1px dashed #D9FFA9;
+    }
+    
+    .form-style-4 input[type=submit],
+    .form-style-4 input[type=button]{
+        background: #576E86;
+        border: none;
+        padding: 8px 10px 8px 10px;
+        border-radius: 5px;
+        color: #A8BACE;
+    }
+    .form-style-4 input[type=submit]:hover,
+    .form-style-4 input[type=button]:hover{
+    background: #394D61;
+    }
+    </style>
+ <body>
+    <!-- This is h1 -->
+    <h1 style="background-color: #dccbeb;">Pastel Purple heading 1</h1>
+    <!-- This is h2 -->
+    <h2>Pastel pink heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <!-- paragraph -->
+    <p>
+        <b>You know nothing with the weight behind these powers, survive or be destroyed there is no other choice.</b>  <em>Lorem ipsum dolor sit amet consectetur</em> adipisicing elit.  <i>Corrupti necessitatibus hic nobis omnis rem</i> iure iste neque atque, labore praesentium sed aperiam quidem officiis aut adipisci ipsum temporibus velit quasi.
+    </p>
+    <a href="https://www.google.com/">google</a>
+    <br />
+    <hr />
+    <img src="Images/welt.jpg" alt="welt image">
+    <hr />
+    <img src="Images/welt.jpg" alt="welt image">
+    <table>
+        <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <th>LPU</th>
+            <th>123456</th>
+            <th>Philippines</th>
+        </tr>
+        <tr>
+            <th>VARC</th>
+            <th>56789</th>
+            <th>Japan</th>
+        </tr>
+    </table>
+    <h3>An Unordered List</h>
+    <ul>
+        <li>coffee</li>
+        <li>iced coffee</li>
+        <li>caramel macchiato</li>
+        <li>espresso</li>
+        <li>macha</li>
+    </ul>
+    <h3>How to make easy pancakes</h3>
+    <ol>
+        <li>Combine the dry ingredients.</li>
+        <li>Add the wet ingredients and mix.</li>
+        <li>Pour or ladle the batter onto the oiled griddle or pan.</li>
+        <li>Cook until bubbles form, flip, and cook on the other side.</li>
+    </ol>
+    <h3>HTML Forms</h3>
+    <form action="">
+        <label for="">First Name</label>
+            <input type="text" name="fname" placeholder="Input First Name"> <br> />
+            <label for="">Password</label>
+            <input type="password" name="pwd" placeholder="Input Password">
+    </form>
+
+    <form class="form-style-4" action="" method="post">
+        <label for="field1">
+        <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+        </label>
+        <label for="field2">
+        <span>Email Address</span><input type="email" name="field2" required="true" />
+        </label>
+        <label for="field3">
+        <span>Short Subject</span><input type="text" name="field3" required="true" />
+        </label>
+        <label for="field4">
+        <span>Message to Us</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+        </label>
+        <label>
+        <span> </span><input type="submit" value="Send Letter" />
+        </label>
+        </form>
+ </body>
+ <script src="js/script.js"></script>
+</html>

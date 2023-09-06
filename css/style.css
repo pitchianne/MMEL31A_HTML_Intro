@@ -1,0 +1,13 @@
+h2{
+background-color: rgb(255, 207, 208);
+color: rgb(255, 151, 107);
+text-align: center;
+font-size: 120px;
+}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    border-style: dotted;
+  }
+
+ 
